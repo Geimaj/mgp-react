@@ -5,7 +5,7 @@ import {
   HashRouter
 } from "react-router-dom";
 import Home from "./Home"
-import Portfolio from "./Portfolio"
+import Services from "./Services"
 import Projects from "./Projects"
 import Contact from "./Contact"
  
@@ -43,7 +43,7 @@ class Main extends Component {
           </ul>
           <div className="content">
             <Route exact path="/" component={Home}/>
-            <Route path="/services" component={Portfolio}/>
+            <Route path="/services" component={Services}/>
             <Route path="/projects" component={Projects}/>
             <Route path="/contact" component={Contact}/>
             
