@@ -9,7 +9,7 @@ class Project extends Component {
             <div className="thumbnail">
               <img src={this.props.src} alt={this.props.title} />
               <div className="caption">
-                <h3>{this.props.title}</h3>
+                <h3 className="title">{this.props.title}</h3>
                 <p>{this.props.description}</p>
               </div>
             </div>

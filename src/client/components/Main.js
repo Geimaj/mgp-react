@@ -10,6 +10,7 @@ import Projects from "./Projects"
 import Contact from "./Contact"
  
 const logo = require('../assets/images/logo.png');
+export const MAIL = "mailto:mike@datis.co.za?Subject=Painting%20Quote%20Request"
 
 class Main extends Component {
   render() {
@@ -18,10 +19,11 @@ class Main extends Component {
 
         <div className="container">
         <header>
-            <a href="#" className="thumbnail">
+            <a href="#" className="">
                 <img src={logo} alt="thumbnail"/>
             </a>
-        </header>
+
+          <nav>
 
           <ul className="nav nav-tabs">
 
@@ -41,14 +43,46 @@ class Main extends Component {
             </li>
           
           </ul>
+          </nav>
+        
+        </header>
+
+        <hr />
+          
+          
           <div className="content">
             <Route exact path="/" component={Home}/>
             <Route path="/services" component={Services}/>
             <Route path="/projects" component={Projects}/>
             <Route path="/contact" component={Contact}/>
-            
           </div>
+
+          <footer>
+
+            <h3 className="title">Contact us</h3>
+
+            <ul>
+              <li>
+                Email:
+                <a href={MAIL}> mike@datis.co.za</a>
+              </li>
+              <li>
+                Phone: 
+            <a href="#">+27 893 2136</a>
+              </li>
+            </ul>
+
+            <p>
+              Postnet Suite 356 | Private Bag X16
+            </p>
+
+            <hr/>
+            Copy right &copy; Mike Gregory Projects {new Date().getUTCFullYear()}
+
+          </footer>
         </div>
+
+
       </HashRouter>
     );
   }
