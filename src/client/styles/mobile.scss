@@ -2,4 +2,15 @@
     body {
         background-attachment: blue;
     }
+
+}
+
+@media screen and (max-width: 750px){
+    
+    .services {
+        p {
+            max-width: 90%;
+        }
+    }
+
 }
