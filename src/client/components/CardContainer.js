@@ -5,8 +5,8 @@ class CardContainer extends Component {
         super()
 
         this.style = {
-            display: "flex",
-            justifyContent: "space-between",
+            // display: "flex",
+            // justifyContent: "space-between",
             
         }
     }

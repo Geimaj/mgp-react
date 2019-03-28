@@ -1,9 +1,11 @@
 import React, { Component } from "react";
- 
+
+import "../styles/services.scss"
+
 class Stuff extends Component {
   render() {
     return (
-      <div>
+      <div className="services">
         <h1 className="title">Services</h1>
         <p>We offer free quotes on the following services:</p>
         <ol>
@@ -25,21 +27,21 @@ class Stuff extends Component {
           designed to relieve customers of undue responsibility while ensuring that the property is always looking
           at is best. Building and maintenance managers rest assured that MGP are the on-site experts, sensitive to
           residents’ needs and mindful of workplace surroundings We operate in all areas in of Cape Town.
-            </p>
+        </p>
 
-      <br/>
-      <br/>
-      <br/>
-      <br/>
-      <br/>
-      <br/>
-      <br/>
-      <br/>
-      <br/>
-      <br/>
-      <br/>
-      
+        <h1 className="title">Compliance</h1>
+          
+          <p>
+            We are registered with the BIBC
+          </p>
 
+        <img src={require("../assets/images/bibc.png")} alt="http://www.bibc.co.za/"/>
+
+
+        <h1 className="title">References</h1>
+        <img src={require("../assets/images/gj.png")} alt="gregory and jones"/>
+        <img src={require("../assets/images/midas.png")} alt="midas"/>
+        
 
       </div>
     );

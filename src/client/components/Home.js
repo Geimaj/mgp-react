@@ -59,8 +59,8 @@ class Home extends Component {
 
           <Card>
             <div>
-              <h1>BCID</h1>
-              <h3>We buy stamps</h3>
+              <h1>BIBC</h1>
+              <h3>Certified</h3>
             </div>
           </Card>
         </CardContainer>

@@ -14,5 +14,9 @@ module.exports = [
         description: "Cape Town",
         src: require('../images/quayside.jpg')
     },
-
+    {
+        title: "SACS High School",
+        description: "Newlands",
+        src: require('../images/sacs.png')
+    },
 ]

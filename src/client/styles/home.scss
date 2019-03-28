@@ -9,5 +9,20 @@
         color: black;
     }
 
+    .cardContainer {
+        display: flex;
+        justify-content: space-between;
+        flex-wrap: wrap;
+    }
+
+    .card {
+        // flex: 1 0 21%;
+        flex: 1;
+
+        img {
+            max-width: 100%;
+        }
+        overflow: wrap;
+    }
     
 }

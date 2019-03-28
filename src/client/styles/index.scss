@@ -6,6 +6,12 @@ $brandColorTransparent: rgba(119, 44, 44, 0.6);
 
 $marginSpacer: 2%;
 
+@font-face {
+    font-family: 'Roboto';
+    font-display: auto;
+    src: local('Roboto');
+}
+
 body, html {
     height: 100%;
     width: 100%;
@@ -14,27 +20,23 @@ body, html {
 
 #root{
     width: 100%;
-    // height: 100%;
     background: $brandColor;
 }
 
 .container {
     background: #fefefe;
     // height: 100%;
+    min-height: 100vh;
     width: 80%;
     box-shadow: 50px 10px darken($color: $brandColor, $amount: 3);
     text-align: center;
-    border-radius: 20px;
+    border-radius: 10px;
+    overflow: hidden;
     
-}
-
-.content {
-    // height: 100%;
 }
 
 .content-page {
     display: none;
-
 
     &.active {
         display: block;
@@ -48,6 +50,7 @@ body, html {
 header{
     margin-top: $marginSpacer;
     display: flex;
+    flex-wrap: wrap;
     justify-content: space-between;
     position: relative;
 
@@ -60,14 +63,15 @@ footer {
     width: 100%;
     margin: 0;
     margin-top: 5%;
-    // background: $brandColorTransparent;
-    // color: white;
 }
 
 .title {
     color: $brandColor;
     text-shadow: 2px 1px blacky;
     font-family: 'Ubuntu', sans-serif;
+    margin-top: 3rem;
+    margin-bottom: 1.5rem;
+    
 }
 
 ul, ol {
@@ -76,3 +80,5 @@ ul, ol {
 
 @import "home";
 @import "projects";
+
+@import "./mobile";
