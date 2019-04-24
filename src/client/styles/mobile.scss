@@ -1,16 +1,25 @@
-@media screen and (max-width: 500px){
-    body {
-        background-attachment: blue;
-    }
-
+@media screen and (max-width: 500px) {
+  // body {
+  //     background-attachment: blue;
+  // }
 }
 
-@media screen and (max-width: 750px){
-    
-    .services {
-        p {
-            max-width: 90%;
-        }
+@media screen and (max-width: 750px) {
+  .services {
+    p {
+      max-width: 90%;
     }
+  }
 
+  header {
+    .logo {
+      .text-logo {
+        display: block !important;
+      }
+
+      img {
+        display: none;
+      }
+    }
+  }
 }

@@ -1,15 +1,18 @@
 .services {
-    width: 100%;
-    font-size: 2rem;
+  width: 100%;
+  font-size: 2rem;
 
-    p {
-        max-width: 70%;
-        margin: 0 auto;
-    }
+  p {
+    max-width: 70%;
+    margin: 0 auto;
+  }
 
-    img {
-        max-width: 80%;
-        margin: 0 auto;
-    }
+  img {
+    max-width: 80%;
+    margin: 0 auto;
+  }
 
+  li {
+    margin-bottom: 0.5em;
+  }
 }

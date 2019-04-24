@@ -1,10 +1,13 @@
 import React, { Component } from "react";
 import Card from "./Card";
 import CardContainer from "./CardContainer";
-import {MAIL} from "./Main"
+import { MAIL } from "./Main";
 
 const jumbotron = require("../assets/images/empire.png");
 const thirtyYears = require("../assets/images/30.svg");
+const paintBrush = require("../assets/images/paint.png");
+const southAfrica = require("../assets/images/southAfrica.png");
+const midasCoOp = require("../assets/images/midasCoop.png");
 
 const CardContainerStyles = {
   width: "80%",
@@ -29,13 +32,13 @@ class Home extends Component {
             <p>Highly rated</p>
           </div>
           <p>
-            <a className="btn btn-primary btn-lg" href={MAIL} role="button" >
+            <a className="btn btn-primary btn-lg" href={MAIL} role="button">
               Request a quote
             </a>
           </p>
         </div>
 
-        <CardContainer style={CardContainerStyles}>
+        <CardContainer>
           <Card>
             <div>
               <h1>30+</h1>
@@ -45,26 +48,28 @@ class Home extends Component {
 
           <Card>
             <div>
-              <h1>South Africa</h1>
-              <h3>Enriching Cape Town</h3>
+              <h1>
+                <img src={southAfrica} alt="Western Cape, South Africa" />
+              </h1>
+              <h3>Cape Town, South Africa</h3>
             </div>
           </Card>
 
           <Card>
             <div>
-              <h1>Brush</h1>
+              <h1>
+                <img src={paintBrush} />
+              </h1>
               <h3>Painting specialists</h3>
-            </div>
-          </Card>
-
-          <Card>
-            <div>
-              <h1>BIBC</h1>
-              <h3>Certified</h3>
             </div>
           </Card>
         </CardContainer>
 
+        <section className="partners">
+          <h1 className="title">In coopiration with</h1>
+          <img src={midasCoOp} alt="Midas" />
+          {/* <img src={Plascon} alt="Plascon" /> */}
+        </section>
       </div>
     );
   }

@@ -1,5 +1,5 @@
-$menubg1: rgba(255,255,255,0.25);
-$menubg2: rgba(255,255,255,0.65);
+$menubg1: rgba(255, 255, 255, 0.25);
+$menubg2: rgba(255, 255, 255, 0.65);
 
 $brandColor: rgb(119, 44, 44);
 $brandColorTransparent: rgba(119, 44, 44, 0.6);
@@ -7,75 +7,85 @@ $brandColorTransparent: rgba(119, 44, 44, 0.6);
 $marginSpacer: 2%;
 
 @font-face {
-    font-family: 'Roboto';
-    font-display: auto;
-    src: local('Roboto');
+  font-family: "Roboto";
+  font-display: auto;
+  src: local("Roboto");
 }
 
-body, html {
-    height: 100%;
-    width: 100%;
-    font-family: 'Roboto', sans-serif;
+body,
+html {
+  height: 100%;
+  width: 100%;
+  font-family: "Roboto", sans-serif;
 }
 
-#root{
-    width: 100%;
-    background: $brandColor;
+#root {
+  width: 100%;
+  background: $brandColor;
 }
 
 .container {
-    background: #fefefe;
-    // height: 100%;
-    min-height: 100vh;
-    width: 80%;
-    box-shadow: 50px 10px darken($color: $brandColor, $amount: 3);
-    text-align: center;
-    border-radius: 10px;
-    overflow: hidden;
-    
+  background: #fefefe;
+  // height: 100%;
+  min-height: 100vh;
+  width: 80%;
+  box-shadow: 50px 10px darken($color: $brandColor, $amount: 3);
+  text-align: center;
+  border-radius: 10px;
+  overflow: hidden;
 }
 
 .content-page {
-    display: none;
+  display: none;
 
-    &.active {
-        display: block;
-    }
+  &.active {
+    display: block;
+  }
 }
 
 .glass {
-    background: linear-gradient($menubg1, $menubg2);
+  background: linear-gradient($menubg1, $menubg2);
 }
 
-header{
-    margin-top: $marginSpacer;
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-between;
-    position: relative;
+header {
+  margin-top: $marginSpacer;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  position: relative;
+  text-align: center;
 
-    nav {
-        align-self: flex-end;
+  .text-logo {
+    display: none;
+    color: black;
+
+    span {
+      color: $brandColor;
     }
+  }
+
+  nav {
+    align-self: flex-end;
+  }
 }
 
 footer {
-    width: 100%;
-    margin: 0;
-    margin-top: 5%;
+  width: 100%;
+  margin: 0;
+  margin-top: 5%;
 }
 
 .title {
-    color: $brandColor;
-    text-shadow: 2px 1px blacky;
-    font-family: 'Ubuntu', sans-serif;
-    margin-top: 3rem;
-    margin-bottom: 1.5rem;
-    
+  color: $brandColor;
+  text-shadow: 2px 1px blacky;
+  font-family: "Ubuntu", sans-serif;
+  margin-top: 3rem;
+  margin-bottom: 1.5rem;
 }
 
-ul, ol {
-    list-style: none;
+ul,
+ol {
+  list-style: none;
 }
 
 @import "home";

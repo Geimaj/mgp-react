@@ -6,23 +6,24 @@
         background-position: center; /* Center the image */
         background-repeat: no-repeat; /* Do not repeat the image */
         background-size: cover;
-        color: black;
+        // color: black;#3d2220
+        color: darken($color: $brandColor, $amount: 15%);
+        
     }
 
     .cardContainer {
         display: flex;
         justify-content: space-between;
         flex-wrap: wrap;
+        align-content: flex-end;
     }
 
-    .card {
-        // flex: 1 0 21%;
-        flex: 1;
-
+    .partners {
         img {
             max-width: 100%;
         }
-        overflow: wrap;
     }
+
+    @import "./card";
     
 }
