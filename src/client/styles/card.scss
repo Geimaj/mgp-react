@@ -1,25 +1,18 @@
-.cardContainer {
-  width: 80%;
-  margin: 0 auto;
-  margin-bottom: 5rem;
+.card {
+  flex: 1;
+  overflow: wrap;
+  align-self: flex-end;
 
-  .card {
-    flex: 1;
-    overflow: wrap;
-    height: 100%;
-    align-self: flex-end;
+  img {
+    max-width: 20%;
+    // height: 40%;
+  }
 
-    img {
-      max-width: 20%;
-      height: 40%;
-    }
+  h1 {
+    color: black;
+  }
 
-    h1 {
-      color: black;
-    }
-
-    h3 {
-      margin-bottom: 0;
-    }
+  h3 {
+    margin-bottom: 0;
   }
 }

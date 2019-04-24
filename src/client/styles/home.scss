@@ -1,29 +1,29 @@
 .home {
+  .jumbotron {
+    background-image: url("../assets/images/empire.png");
+    background-position: center; /* Center the image */
+    background-repeat: no-repeat; /* Do not repeat the image */
+    background-size: cover;
+    // color: black;#3d2220
+    color: darken($color: $brandColor, $amount: 15%);
+  }
 
+  .cardContainer {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    align-content: flex-end;
 
-    .jumbotron {
-        background-image: url("../assets/images/empire.png");
-        background-position: center; /* Center the image */
-        background-repeat: no-repeat; /* Do not repeat the image */
-        background-size: cover;
-        // color: black;#3d2220
-        color: darken($color: $brandColor, $amount: 15%);
-        
+    width: 80%;
+    margin: 0 auto;
+    margin-bottom: 5rem;
+  }
+
+  .partners {
+    img {
+      max-width: 100%;
     }
+  }
 
-    .cardContainer {
-        display: flex;
-        justify-content: space-between;
-        flex-wrap: wrap;
-        align-content: flex-end;
-    }
-
-    .partners {
-        img {
-            max-width: 100%;
-        }
-    }
-
-    @import "./card";
-    
+  @import "./card";
 }

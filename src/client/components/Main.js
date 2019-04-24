@@ -61,7 +61,7 @@ class Main extends Component {
               </li>
               <li>
                 Phone:
-                <a>+27 82 893 2136</a>
+                <a href="tel:+27828932136">+27 82 893 2136</a>
               </li>
             </ul>
             <p>Postnet Suite 356 | Private Bag X16</p>

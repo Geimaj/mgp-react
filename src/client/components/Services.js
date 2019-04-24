@@ -15,7 +15,7 @@ class Stuff extends Component {
             <li>Damp removal</li>
             <li>Crack repair</li>
             <li>Joint repair</li>
-            <li>Wall, window &amp; facia restoration</li>
+            <li>Wall, window &amp; fascia restoration</li>
           </h2>
         </ol>
 

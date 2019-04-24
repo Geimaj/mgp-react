@@ -9,6 +9,15 @@
     p {
       max-width: 90%;
     }
+
+    ol {
+      margin: 0;
+      padding: 0;
+    }
+
+    li {
+      margin-left: 0;
+    }
   }
 
   header {
@@ -19,6 +28,20 @@
 
       img {
         display: none;
+      }
+    }
+  }
+
+  .cardContainer {
+    flex-direction: column;
+    .card {
+      align-self: center;
+      img {
+        max-width: 40%;
+      }
+
+      h3 {
+        // display: none;
       }
     }
   }

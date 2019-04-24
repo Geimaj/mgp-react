@@ -66,7 +66,7 @@ class Home extends Component {
         </CardContainer>
 
         <section className="partners">
-          <h1 className="title">In coopiration with</h1>
+          <h1 className="title">In cooperation with</h1>
           <img src={midasCoOp} alt="Midas" />
           {/* <img src={Plascon} alt="Plascon" /> */}
         </section>
