@@ -1,0 +1,14 @@
+.nav {
+	display: flex;
+	justify-content: space-between;
+	font-size: 3rem;
+	margin-top: 1.5rem;
+}
+
+.anchor {
+	text-decoration: none;
+}
+
+.anchor:hover {
+	background-color: red;
+}

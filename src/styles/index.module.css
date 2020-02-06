@@ -1,0 +1,19 @@
+.jumbotron {
+	background-image: url("/images/empire.png");
+	background-position: center; /* Center the image */
+	background-repeat: no-repeat; /* Do not repeat the image */
+	background-size: cover;
+	/* // color: black;#3d2220
+    color: darken($color: $brandColor, $amount: 15%); */
+}
+
+.cards {
+	display: flex;
+	justify-content: space-between;
+	margin: 0 auto;
+	background: rebeccapurple;
+}
+
+.card {
+	background: red;
+}
